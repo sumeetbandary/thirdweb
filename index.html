@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BMI Calculator</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS v5.0.2 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container mt-5 px-5 pt-5 pb-5 bg-danger rounded-3">
+			<h1 class="text-center mb-5">Mint NFT</h1>
+			<form action="/mintnft" method="post">
+				<div class="mb-3 row">
+					<label for="weight" class="col-sm-3 col-form-label">NFT Name</label>
+					<div class="col-sm-4">
+						<input
+							step=".02"
+							type="text"
+							class="form-control"
+							name="nftName"
+							id="nftName"
+							placeholder="Enter the nft name"
+						/>
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="height" class="col-sm-3 col-form-label">Description</label>
+					<div class="col-sm-4">
+						<input
+							step=".02"
+							type="text"
+							class="form-control"
+							name="nftDescription"
+							id="nftDescription"
+							placeholder="Enter the description"
+						/>
+					</div>
+					<div class="mb-3">
+  					<label for="formFile" class="form-label">Upload NFT image</label>
+  					<input class="form-control" type="file" name="image" id="image" accept="image/png, image/gif, image/jpeg">
+					</div>
+					<div class="mb-3 mt-5 row">
+						<button type="submit" class="btn btn-success">Create</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- Bootstrap JavaScript Libraries -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

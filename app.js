@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 const app = express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -8,8 +9,9 @@ import mintTokenRouter from "./routes/mint-token.js"
 import nftCollectionRouter from "./routes/nftcollection.js"
 // const mintnftRouter = require();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/mintnft', (req, res) => {
+  const __dirname = path.resolve();
+  res.sendFile(__dirname + "/index.html");
 })
 app.use("/mintnft",mintnftRouter);
 app.use("/mintTokenRouter",mintTokenRouter);
