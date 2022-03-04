@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
       await nft.mint({
         name: data.nftName,
         description: data.nftDescription,
-        image: data.image ,
+        image: data.image,
         properties: {},
       });
       console.log('Successfully created a new NFT in the collection!');
@@ -22,6 +22,7 @@ router.post('/', (req, res) => {
       console.error('failed to create the new NFT', error);
     }
   })();
+  res.send("Created nft");
 });
 // module.exports = router;
 export default router;

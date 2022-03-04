@@ -1,5 +1,7 @@
 import express from 'express';
 const app = express()
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 const port = 3000
 import mintnftRouter from "./routes/mintnft.js"
 import mintTokenRouter from "./routes/mint-token.js"
