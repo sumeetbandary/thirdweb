@@ -7,6 +7,7 @@ const port = 3000
 import mintnftRouter from "./routes/mintnft.js"
 import mintTokenRouter from "./routes/mint-token.js"
 import nftCollectionRouter from "./routes/nftcollection.js"
+import deletenft from "./routes/deletenft.js"
 // const mintnftRouter = require();
 
 app.get('/mintnft', (req, res) => {
@@ -16,6 +17,7 @@ app.get('/mintnft', (req, res) => {
 app.use("/mintnft",mintnftRouter);
 app.use("/mintTokenRouter",mintTokenRouter);
 app.use("/createcollection",nftCollectionRouter);
+app.use("/deletenft",deletenft);
 // app.use("/buynft",buyNftRouter);
 
 app.listen(port, () => {

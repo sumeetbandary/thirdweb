@@ -8,7 +8,8 @@ router.post('/', (req, res) => {
     nftDescription: req.body.nftDescription,
     image: req.body.image
   };
-  const nft = sdk.getNFTModule('0xb27F51c3934E2Ec9DA9234C6eb8edB56ad8f08a0');
+  const NFTAddress = "0xb27F51c3934E2Ec9DA9234C6eb8edB56ad8f08a0";
+  const nft = sdk.getNFTModule(NFTAddress);
   (async () => {
     try {
       await nft.mint({
